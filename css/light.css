@@ -1,0 +1,56 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+body::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#controlPanel {
+    float: left;
+    padding-top: 2rem;
+}
+
+.button {
+    background-color: gray;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 0.6667rem;
+    box-shadow: 0 1.7rem 1rem -1rem rgba(0, 0, 0, 0.4);
+    padding: 1.3333rem;
+    text-align: center;
+    margin: 6rem 2.6667rem;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+.button:hover {
+    box-shadow: 0 3.7rem 2rem -2rem rgba(0, 0, 0, 0.2);
+    transform: translate(0, -1rem);
+}
+
+#traffic-light {
+    height: 36.6667rem;
+    width: 13.3333rem;
+    float: left;
+    background: #333333;
+    border-radius: 2.6667rem;
+    margin: 2rem 0;
+    padding: 1.3333rem;
+}
+
+.bulb {
+    height: 10rem;
+    width: 10rem;
+    background: #111111;
+    border-radius: 50% 40%;
+    margin: 1.6667rem auto;
+    transition: background 800ms ease-in-out;
+}
